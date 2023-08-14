@@ -1,0 +1,42 @@
+/* #special-element-2 li{
+
+}
+
+.shadow{
+    font-size: 50px;
+    color: blueviolet;
+    text-shadow: -5px -3px 5px red;
+} */
+
+#count-box{
+    display: flex;
+}
+#flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    height: 200px;
+    background-color: gray;
+}
+#increment{
+    padding: 12px 25px;
+    background-color: blueviolet;
+    border-radius: 7px;
+    outline: none;
+    color: white;
+    font-size: 15px;
+}
+#decrement{
+    padding: 12px 25px;
+    background-color: blueviolet;
+    border-radius: 7px;
+    outline: none;
+    color: white;
+    font-size: 15px;
+}
+#count{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
