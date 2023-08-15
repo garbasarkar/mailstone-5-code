@@ -37,9 +37,9 @@ document.getElementById ('btn-withdraw').addEventListener('click', function () {
     const newWithdrawMoneyString = withdrawMoney.value;
     const newWithdrawMoneyStringChance = parseFloat(newWithdrawMoneyString);
 
-            // step: 7
-            withdrawMoney.value = '';
-            
+    // step: 7
+   withdrawMoney.value = '';
+
     if(isNaN(newWithdrawMoneyStringChance)){
         alert('please provide a valid number');
         return;
@@ -54,21 +54,15 @@ document.getElementById ('btn-withdraw').addEventListener('click', function () {
     const balanceTotalElementstring = balanceTotalElement.innerText;
     const balanceTotalElementstringChance = parseFloat(balanceTotalElementstring);
 
-
-   
     if(newWithdrawMoneyStringChance > balanceTotalElementstringChance){
         alert('Baap er pokete taka nai');
         return;
     }
-
-         // step: 4
-         const currentWithdrawTotal = previousWithdrawStringChance + newWithdrawMoneyStringChance;
-         previousWithdraw.innerText = currentWithdrawTotal;
+     // step: 4
+     const currentWithdrawTotal = previousWithdrawStringChance + newWithdrawMoneyStringChance;
+     previousWithdraw.innerText = currentWithdrawTotal;
          
     // step: 6
     const totalWithdraw = balanceTotalElementstringChance - newWithdrawMoneyStringChance;
     balanceTotalElement.innerText = totalWithdraw;
-
-
-    
 })
