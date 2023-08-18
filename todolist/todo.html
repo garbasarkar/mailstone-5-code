@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- <header>
+        <h1 class="text-5xl text-red-700 font-bold text-center mt-5">CREATE A TO DO LIST</h1>
+        <div class="text-center mt-10 ">
+            <input id="inputText" class="py-3 border-solid bg-gray-200 rounded-md pl-5 w-1/4" type="text" placeholder="Type Your Text">
+            <button id="addTask" class="btn btn-outline btn-secondary">ADD TASK</button>
+        </div>
+
+        <div class="design w-2/4 h-[300px] bg-blue-200 mx-auto mt-10">
+            <h1 class="text-center text-3xl font-semibold pt-4">TODO ITEMS</h1>
+            <ol id="olitem" class="pl-5 text-2xl">
+                <li>Apple</li>
+                <li>Mango</li>
+            </ol>
+        </div>
+    </header> -->
+
+    <main class="w-8/12 mx-auto grid grid-cols-4 items-center mt-10 mb-10">
+        <div class="w-[250px] pl-5 pr-5 text-center">
+            <div class="box bg-gray-200">
+                <img class="box-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcpaBJU1Py2Me2S1B0RTSz-V4T3Eg1iEJt4T52yNqmP-Rtj1MUuriMmsvi3h6yiEkjnvY&usqp=CAU" alt="" />
+                <div class="box-info p-3">
+                  <h5>blue rose</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                  <h6>price: <span id="money">100</span> $</h6>
+                  <button onclick="getElement()" class="btn box-btn">
+                    ADD TO CART
+                  </button>
+                </div>
+              </div>
+        </div>
+        <div class="w-[250px] pl-5 pr-5 text-center">
+            <div class="box bg-gray-200">
+                <img class="box-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcpaBJU1Py2Me2S1B0RTSz-V4T3Eg1iEJt4T52yNqmP-Rtj1MUuriMmsvi3h6yiEkjnvY&usqp=CAU" alt="" />
+                <div class="box-info p-3">
+                  <h5>Yellow Rose</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                  <h6>price: <span id="secoundMoney">300</span> $</h6>
+                  <button onclick="secondFunc()" class="btn box-btn">
+                    ADD TO CART
+                  </button>
+                </div>
+              </div>
+        </div>
+        <div class="w-[250px] pl-5 pr-5 text-center">
+            <div class="box bg-gray-200">
+                <img class="box-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcpaBJU1Py2Me2S1B0RTSz-V4T3Eg1iEJt4T52yNqmP-Rtj1MUuriMmsvi3h6yiEkjnvY&usqp=CAU" alt="" />
+                <div class="box-info p-3">
+                  <h5>Green Rose</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                  <h6>price: <span id="thirdMoney">400</span> $</h6>
+                  <button onclick="thirdHandelFun()" class="btn box-btn">
+                    ADD TO CART
+                  </button>
+                </div>
+              </div>
+        </div>
+        <div class="right-side-container col-4 text-center text-2xl space-y-4">
+            <h4>Code: Hero</h4>
+  
+            <div class="selected-items" id="selected-items"></div>
+            <div class="cart-box">
+              <h6>total: <span id="total">00</span></h6>
+              <h6>discount:<span id="discountManey">00</span></h6>
+              <hr />
+              <h5>grand Total: <span>00</span></h5>
+            </div>
+  
+            <div class="coupon"></div>
+          </div>
+    </main>
+
+
+    <script src="../todolist/todo.js"></script>
+</body>
+</html>

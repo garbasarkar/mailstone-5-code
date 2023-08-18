@@ -12,3 +12,29 @@ document.getElementById('btn-submit').addEventListener('click', function() {
         alert('Toke ami teijjo sontan gosona korlam!!! tui password vule gessos.')
     }
 })
+
+
+// function text1(){
+//     // setText('info1', 'I am form bangladesh');
+//     const sum = toNumber('input');
+//     console.log(sum);
+// }
+// function text2(){
+//     setText('info2', 'My name is partha sarkar');
+// }
+// function text3(){
+//     setText('info3', 'What do you do now')
+// }
+
+// function setText (id, text){
+//     document.getElementById(id).innerText = text;
+// }
+
+// function toNumber (id){
+//     const result = document.getElementById(id).value;
+//     return parseInt(result);
+// }
+
+function text1(terget){
+    console.log(terget.parentNode.childNodes)
+}

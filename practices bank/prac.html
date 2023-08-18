@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prictices bank website</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-3xl md:text-5xl text-center mt-6">Function <span class="font-semibold color-blue text-blue-600">Baper <br> Er Bank Account!!!</span></h1>
+    </header>
+    <main>
+        <section>
+            <div class="grid lg:grid-cols-3 gap-4 w-9/12 mx-auto mt-10">
+                <div class="bg-blue-300 p-8 rounded-xl">
+                    <h4 class="text-2xl">Deposit</h4>
+                    <h2 class="text-5xl text-white">$<span id="deposit-money">00</span></h2>
+                </div>
+                <div class="bg-yellow-300 p-8 rounded-xl">
+                    <h4 class="text-2xl">Withdrow</h4>
+                    <h2 class="text-5xl text-white">$<span id="withdraw-money">00</span></h2>
+                </div>
+                <div class="bg-red-400 p-8 rounded-xl">
+                    <h4 class="text-2xl">Balance</h4>
+                    <h2 class="text-5xl text-white">$<span id="balance-money">1140</span></h2>
+                </div>
+            </div>
+        </section>
+    
+        <section>
+            <div class="grid md:grid-cols-2 gap-4 w-9/12 mx-auto mt-10">
+                <div class="bg-red-300 p-8 rounded-xl">
+                    <h4 class="text-2xl mb-4">Please Deposit</h4>
+                        <input class="w-9/12 mb-4 pl-5 py-2 rounded-md" type="emall" id="depusit-money-input" placeholder="$ Amount Your Deposit"><br>
+                        <button id="deposit-click" class="bg-amber-400 px-8 py-2 text-white font-medium rounded-md hover:bg-sky-700">Deposit</button>
+                </div>
+                <div class="bg-orange-400 p-8 rounded-xl">
+                    <h4 class="text-2xl">Please Withdraw</h4>
+                    <input class="w-9/12 mb-4 pl-5 py-2 mt-4 rounded-md" type="text" id="withdraw-money-input" placeholder="$ Amount you want to Withdraw"><br>
+                    <button id="withdraw-click" class="bg-amber-400 px-8 py-2 text-white font-medium rounded-md hover:bg-sky-700">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main><br> <br> <br>
+
+    <footer class="flex w-8/12 mx-auto gap-4 mb-10">
+        
+        <!-- <div class="">
+            <div class="card w-96 bg-base-100 shadow-xl image-full">
+                <figure><img src="https://help.rangeme.com/hc/article_attachments/360006928633/what_makes_a_good_product_image.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-outline btn-success">Discount: 30%</button>
+                    <button onclick="product()" id="btn" class="btn btn-primary">Aplay</button>
+                  </div>
+                </div>
+        </div>
+            <h1> price: 1000</h1>
+          </div>
+
+        <div class="">
+            <div class="card w-96 bg-base-100 shadow-xl image-full">
+                <figure><img src="https://img.freepik.com/premium-photo/woman-holding-shopping-bags-mediums-hot_23-2149220694.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-outline btn-success">Discount: 40%</button>
+                    <input id="code" type="text" class="w-1/4 py-3 rounded-md bg-blue-300 text-black" placeholder="Cu:Code">
+                    <button id="discount-click" class="btn btn-primary">Aplay</button>
+                  </div>
+                </div>
+        </div>
+            <button class="btn btn-warning text-white mt-5">Price: 1000</button>
+          </div> -->
+    </footer>
+
+    <!-- <div id="div">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+    </div> -->
+
+    <script src="../practices bank/prac.js"></script>
+    <script src="../practices bank/practic.js"></script>
+    <script src="../practices bank/practices.js"></script>
+    <script src="../practices bank/product.js"></script>
+</body>
+</html>
